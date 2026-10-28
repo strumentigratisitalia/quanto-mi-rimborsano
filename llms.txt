@@ -3,6 +3,6 @@
 > Calcolatore gratuito in italiano della compensazione per voli in ritardo (3 ore o più all'arrivo), cancellati o con imbarco negato secondo il Reg. (CE) 261/2004 (250, 400 o 600 euro; UK261 in sterline) e dell'indennizzo per treni in ritardo secondo il Reg. (UE) 2021/782, Trenitalia e Italo (25% o 50% del biglietto; bonus 25% per 30-59 minuti sulle Frecce). Fornisce il testo del reclamo e i link ufficiali (ENAC, ConciliaWeb ART). Regole verificate a ottobre 2026, inclusa la riforma Reg. (UE) 2026/2202 applicabile dal 23/10/2027.
 
 ## Pagine
-- [Calcolatore](https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/)
-- [Guida voli: ritardo, cancellazione, imbarco negato](https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/ritardo-volo/)
-- [Guida treni: Trenitalia e Italo](https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/ritardo-treno/)
+- [Calcolatore](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/)
+- [Guida voli: ritardo, cancellazione, imbarco negato](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/ritardo-volo/)
+- [Guida treni: Trenitalia e Italo](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/ritardo-treno/)

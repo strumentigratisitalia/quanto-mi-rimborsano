@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/sitemap.xml
+Sitemap: https://strumentigratisitalia.github.io/quanto-mi-rimborsano/sitemap.xml
