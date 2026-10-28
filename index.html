@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rimborso volo o treno in ritardo: calcola quanto ti spetta</title>
+<meta name="description" content="Calcola in 30 secondi quanto ti spetta per un volo in ritardo, cancellato o con imbarco negato (fino a 600 €) o per un treno Trenitalia o Italo in ritardo. Gratis, con il modello di reclamo da copiare.">
+<link rel="canonical" href="https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/">
+<meta name="theme-color" content="#ffd400">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Quanto mi rimborsano">
+<meta property="og:title" content="Volo o treno in ritardo? Calcola quanto ti spetta">
+<meta property="og:description" content="Fino a 600 € per un volo, fino al 50% del biglietto per un treno. Gratis, con il reclamo già scritto.">
+<meta property="og:url" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/">
+<meta property="og:image" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Quanto mi rimborsano",
+  "url": "https://strumentigratisitalia.github.io/StrumentiGratisItalia/quanto-mi-rimborsano/",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Qualsiasi browser",
+  "inLanguage": "it",
+  "description": "Calcolatore gratuito della compensazione per voli in ritardo, cancellati o con imbarco negato (Reg. CE 261/2004: 250, 400 o 600 euro) e dell'indennizzo per treni in ritardo (Reg. UE 2021/782, Trenitalia, Italo: 25% o 50% del biglietto), con modello di reclamo.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Quanto spetta per un volo in ritardo?", "acceptedAnswer": {"@type": "Answer", "text": "Con almeno 3 ore di ritardo all'arrivo spettano 250 euro fino a 1.500 km, 400 euro tra 1.500 e 3.500 km (e per tutti i voli dentro l'UE oltre 1.500 km), 600 euro oltre 3.500 km. Sopra i 3.500 km, con un ritardo tra 3 e 4 ore, l'importo si dimezza a 300 euro. Vale per i voli in partenza dall'UE e per quelli in arrivo nell'UE con compagnia europea."}},
+    {"@type": "Question", "name": "Quanto rimborsa Trenitalia per un treno in ritardo?", "acceptedAnswer": {"@type": "Answer", "text": "Il 25% del prezzo del biglietto per un ritardo tra 60 e 119 minuti e il 50% da 120 minuti in su. Sulle Frecce anche un ritardo tra 30 e 59 minuti dà un bonus del 25%, non convertibile in denaro. Sui regionali non si pagano indennizzi sotto i 4 euro."}},
+    {"@type": "Question", "name": "Quanto rimborsa Italo per un ritardo?", "acceptedAnswer": {"@type": "Answer", "text": "Il 25% del prezzo per un ritardo tra 60 e 119 minuti e il 50% da 120 minuti in su, come voucher valido un anno che si può convertire in denaro se supera i 4 euro."}},
+    {"@type": "Question", "name": "Serve un'agenzia per chiedere il rimborso del volo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Puoi scrivere tu alla compagnia con un reclamo formale; le agenzie trattengono di solito una percentuale della somma. Se la compagnia non risponde o rifiuta, c'è la conciliazione gratuita dell'Autorità di regolazione dei trasporti (ConciliaWeb) e il reclamo all'ENAC."}},
+    {"@type": "Question", "name": "Cambiano le regole per i voli nel 2027?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Il Regolamento (UE) 2026/2202 conferma la soglia di 3 ore e gli importi di 250, 400 e 600 euro, ma dal 23 ottobre 2027 introduce un termine di 9 mesi per il reclamo e regole diverse sulle riduzioni. Fino ad allora valgono le regole attuali."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="mark" aria-hidden="true">€</span> Quanto mi rimborsano</a>
+  <nav><a href="ritardo-volo/">Voli</a><a href="ritardo-treno/">Treni</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Volo o treno in ritardo? Scopri quanto ti devono.</h1>
+    <p class="lead">Fino a 600 € per un volo, fino a metà del biglietto per un treno. Rispondi a qualche domanda e ricevi la cifra e il reclamo già scritto, senza dare percentuali a nessuno.</p>
+  </section>
+
+  <section class="calc" aria-label="Calcolatore">
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-volo" aria-selected="true" aria-controls="volo">Volo</button>
+      <button role="tab" id="tab-treno" aria-selected="false" aria-controls="treno">Treno</button>
+    </div>
+
+    <form id="volo" role="tabpanel" aria-labelledby="tab-volo" novalidate>
+      <fieldset>
+        <legend>Cosa è successo?</legend>
+        <div class="seg">
+          <label><input type="radio" name="caso" value="ritardo" checked><span>Sono arrivato in ritardo</span></label>
+          <label><input type="radio" name="caso" value="cancellato"><span>Volo cancellato</span></label>
+          <label><input type="radio" name="caso" value="negato"><span>Imbarco negato</span></label>
+        </div>
+      </fieldset>
+
+      <div class="row2">
+        <label class="ap">Partenza
+          <input id="da" autocomplete="off" placeholder="Città o codice, es. Bari" role="combobox" aria-expanded="false" aria-controls="da-list" aria-autocomplete="list">
+          <ul class="suggest" id="da-list" role="listbox" hidden></ul>
+        </label>
+        <label class="ap">Destinazione finale
+          <input id="a" autocomplete="off" placeholder="Città o codice, es. Londra" role="combobox" aria-expanded="false" aria-controls="a-list" aria-autocomplete="list">
+          <ul class="suggest" id="a-list" role="listbox" hidden></ul>
+        </label>
+      </div>
+      <p class="hint">Con uno scalo, scrivi la prima partenza e l'ultima destinazione.</p>
+
+      <fieldset id="f-vettore" hidden>
+        <legend>La compagnia è europea?</legend>
+        <p class="hint">Conta per i voli che partono da fuori Europa. Europee sono per esempio ITA Airways, Lufthansa, Air France, KLM, Ryanair, Wizz Air, Vueling.</p>
+        <div class="seg">
+          <label><input type="radio" name="vettoreUe" value="si"><span>Sì</span></label>
+          <label><input type="radio" name="vettoreUe" value="no"><span>No</span></label>
+          <label><input type="radio" name="vettoreUe" value="nonso" checked><span>Non so</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset id="f-ritardo">
+        <legend>Con quanto ritardo sei arrivato?</legend>
+        <p class="hint">Conta l'orario in cui si apre il portellone all'arrivo, non quello della partenza.</p>
+        <div class="seg">
+          <label><input type="radio" name="ritardo" value="60"><span>Meno di 3 ore</span></label>
+          <label><input type="radio" name="ritardo" value="200" checked><span>Tra 3 e 4 ore</span></label>
+          <label><input type="radio" name="ritardo" value="300"><span>Più di 4 ore</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset id="f-preavviso" hidden>
+        <legend>Quando ti hanno avvisato della cancellazione?</legend>
+        <div class="seg">
+          <label><input type="radio" name="preavviso" value="0" checked><span>Meno di 7 giorni prima</span></label>
+          <label><input type="radio" name="preavviso" value="7"><span>Tra 7 e 14 giorni prima</span></label>
+          <label><input type="radio" name="preavviso" value="14"><span>Più di 14 giorni prima</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset id="f-alt" hidden>
+        <legend>Hai preso un volo alternativo offerto dalla compagnia?</legend>
+        <div class="seg">
+          <label><input type="radio" name="alt" value="no" checked><span>No</span></label>
+          <label><input type="radio" name="alt" value="si"><span>Sì</span></label>
+        </div>
+        <div class="row2" id="alt-times" hidden>
+          <label>Partiva prima del volo originale di
+            <select name="altPrima"><option value="0">Non partiva prima</option><option value="60">fino a 1 ora</option><option value="120">tra 1 e 2 ore</option><option value="999">più di 2 ore</option></select>
+          </label>
+          <label>Sei arrivato in ritardo di
+            <select name="altDopo"><option value="60">meno di 2 ore</option><option value="179">tra 2 e 3 ore</option><option value="239">tra 3 e 4 ore</option><option value="999">più di 4 ore</option></select>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset id="f-causa">
+        <legend>Che motivo ti hanno dato?</legend>
+        <div class="seg seg-wrap">
+          <label><input type="radio" name="causa" value="nonso" checked><span>Nessuno o non so</span></label>
+          <label><input type="radio" name="causa" value="tecnica"><span>Problema tecnico</span></label>
+          <label><input type="radio" name="causa" value="sciopero"><span>Sciopero della compagnia</span></label>
+          <label><input type="radio" name="causa" value="eccezionale"><span>Maltempo, controllo del traffico, sicurezza</span></label>
+        </div>
+      </fieldset>
+
+      <label class="small-field">Passeggeri nella prenotazione
+        <input name="passeggeri" type="number" min="1" max="9" value="1" inputmode="numeric">
+      </label>
+
+      <p class="err" id="volo-err" role="alert" hidden></p>
+      <button class="btn btn-go" type="submit">Calcola quanto mi spetta</button>
+    </form>
+
+    <form id="treno" role="tabpanel" aria-labelledby="tab-treno" hidden novalidate>
+      <fieldset>
+        <legend>Con che treno viaggiavi?</legend>
+        <div class="seg seg-wrap">
+          <label><input type="radio" name="vettore" value="frecce" checked><span>Frecciarossa e altre Frecce</span></label>
+          <label><input type="radio" name="vettore" value="italo"><span>Italo</span></label>
+          <label><input type="radio" name="vettore" value="ic"><span>Intercity</span></label>
+          <label><input type="radio" name="vettore" value="regionale"><span>Regionale Trenitalia</span></label>
+          <label><input type="radio" name="vettore" value="altro"><span>Altra compagnia europea</span></label>
+        </div>
+      </fieldset>
+      <div class="row2">
+        <label>Prezzo del biglietto
+          <span class="euro"><input name="prezzo" inputmode="decimal" placeholder="49,90"></span>
+        </label>
+        <label>Minuti di ritardo all'arrivo
+          <input name="minuti" type="number" min="0" max="1440" inputmode="numeric" placeholder="75">
+        </label>
+      </div>
+      <fieldset>
+        <legend>Il ritardo è dovuto a…</legend>
+        <div class="seg seg-wrap">
+          <label><input type="radio" name="causaT" value="normale" checked><span>Guasto, sciopero, motivo non detto</span></label>
+          <label><input type="radio" name="causaT" value="esterna"><span>Maltempo estremo, persone sui binari, polizia</span></label>
+        </div>
+      </fieldset>
+      <label class="small-field">Biglietti uguali
+        <input name="passeggeriT" type="number" min="1" max="9" value="1" inputmode="numeric">
+      </label>
+      <p class="err" id="treno-err" role="alert" hidden></p>
+      <button class="btn btn-go" type="submit">Calcola quanto mi spetta</button>
+    </form>
+  </section>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <div class="stub" id="stub">
+      <div class="stub-main">
+        <p class="stub-label" id="rLabel">Ti spettano</p>
+        <p class="stub-amount" id="rAmount"></p>
+        <p class="stub-sub" id="rSub"></p>
+      </div>
+      <div class="stub-side" id="rSide"></div>
+    </div>
+    <p class="why" id="rWhy"></p>
+    <ul class="warn" id="rWarn"></ul>
+    <div class="actions" id="rActions">
+      <button class="btn btn-go" id="share">Condividi il risultato</button>
+      <button class="btn btn-line" id="again">Rifai il calcolo</button>
+    </div>
+
+    <div class="howto" id="howto">
+      <h2>Come chiederli, gratis</h2>
+      <ol id="steps"></ol>
+      <h3>Il reclamo, già scritto</h3>
+      <p class="hint">Completa le parti tra parentesi quadre e mandalo alla compagnia dal suo modulo reclami, per PEC o per raccomandata.</p>
+      <textarea id="letter" rows="14" readonly></textarea>
+      <button class="btn btn-line" id="copyLetter">Copia il reclamo</button>
+    </div>
+    <p class="disclaimer">Stima indicativa basata sui regolamenti europei e sulle condizioni delle compagnie aggiornate a ottobre 2026. Non è consulenza legale: fanno fede il regolamento e le condizioni del vettore.</p>
+  </section>
+
+  <section class="info">
+    <h2>Le cifre, in breve</h2>
+    <div class="tables">
+      <table>
+        <caption>Voli, ritardo di 3 ore o più</caption>
+        <tr><th>Distanza</th><th>Ti spettano</th></tr>
+        <tr><td>Fino a 1.500 km</td><td>250 €</td></tr>
+        <tr><td>1.500-3.500 km, o oltre 1.500 km dentro l'UE</td><td>400 €</td></tr>
+        <tr><td>Oltre 3.500 km</td><td>600 € (300 € con ritardo tra 3 e 4 ore)</td></tr>
+      </table>
+      <table>
+        <caption>Treni, sul prezzo del biglietto</caption>
+        <tr><th>Ritardo</th><th>Ti spetta</th></tr>
+        <tr><td>30-59 min (solo Frecce)</td><td>25% in bonus</td></tr>
+        <tr><td>60-119 min</td><td>25%</td></tr>
+        <tr><td>120 min o più</td><td>50%</td></tr>
+      </table>
+    </div>
+    <p>I dettagli, le eccezioni e i link ufficiali sono nelle guide: <a href="ritardo-volo/">rimborso per volo in ritardo o cancellato</a> e <a href="ritardo-treno/">indennizzo per treno in ritardo</a>.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Quanto mi rimborsano è gratuito e non raccoglie i tuoi dati. <a href="ritardo-volo/">Guida voli</a> <a href="ritardo-treno/">Guida treni</a> <a href="privacy/">Privacy</a></p>
+  <p class="credits">Dati degli aeroporti: OpenFlights.org (licenza ODbL).</p>
+</footer>
+<script src="calcolo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
