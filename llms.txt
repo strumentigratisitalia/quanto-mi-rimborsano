@@ -6,3 +6,4 @@
 - [Calcolatore](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/)
 - [Guida voli: ritardo, cancellazione, imbarco negato](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/ritardo-volo/)
 - [Guida treni: Trenitalia e Italo](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/ritardo-treno/)
+- [Volo cancellato comprato su agenzia online (eDreams, Volagratis, Opodo, Kiwi): chi rimborsa e quanto](https://strumentigratisitalia.github.io/quanto-mi-rimborsano/volo-cancellato-agenzia/)
